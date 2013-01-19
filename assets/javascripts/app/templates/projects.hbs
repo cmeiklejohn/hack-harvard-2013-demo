@@ -1,0 +1,12 @@
+<section>
+  <ul>
+    {{#each project in content}}
+    <li>
+      <span class="votes">{{project.votes}}</span>
+        {{#linkTo projects.show project}}{{project.name}}{{/linkTo}}
+    </li>
+    {{/each}}
+  </ul>
+</section>
+
+{{outlet project}}
